@@ -1,0 +1,256 @@
+/* Name: Ethan EG */
+/* Date: 2025-02-28 */
+/* File: index.css */
+
+.barcelona-image-container{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#barcelona-image{
+    display:block;
+    -webkit-mask-image: linear-gradient(to bottom,  
+        rgba(0, 0, 0, 1) 60%,  
+        rgba(0, 0, 0, 0.5) 80%, 
+        rgba(0, 0, 0, 0) 100% 
+    );
+    mask-image: linear-gradient(to bottom,  
+        rgba(0, 0, 0, 1) 70%,  
+        rgba(0, 0, 0, 0.5) 85%,  
+        rgba(0, 0, 0, 0) 100%  
+    );
+}
+
+#barcelona-image-title{
+    font-family: 'Gill Sans';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color:white;
+    font-size: 740%;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+    white-space: nowrap;
+}
+
+@media (max-width: 900px){
+    #barcelona-image-title{
+        font-size: 540%;
+    }
+}
+
+@media (max-width: 700px){
+    #barcelona-image-title{
+        font-size: 340%;
+    }
+}
+
+@media (max-width: 400px){
+    #barcelona-image-title{
+        font-size: 250%;
+    }
+}
+
+.title{
+    font-family: Quicksand;
+    font-size: 5vw;
+    font-weight: lighter;
+}
+
+.title-outline{
+    padding-bottom: 40px;
+}
+
+.title-break-line{
+    height: 6px;
+    color: #F1BF00;
+    background: #F1BF00;
+    width: 12vw;
+    border: none;
+}
+
+.barcelona-outline-container{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.barcelona-outline-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.barcelona-outline-grid p{
+    font-size: 2vw;
+    margin-top: 30px;
+    align-self: start;
+    font-family: Lora;
+}
+
+#barcelona-outline-map{
+    width: 25vw;
+    height: auto;
+}
+
+#google-maps{
+    height: 35vw;
+    width: 25vw;
+}
+
+.weather-container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: rgb(241, 242, 243);
+    padding-top: 8vh;
+}
+
+.barcelona-weather-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 10vh;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.weather-information{
+    align-self: start;
+}
+
+.weather-information h2{
+    font-family: Quicksand;
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+.weather-information hr{
+    height: 4px;
+    color: black;
+    background: black;
+    font-size: 0;
+    border: 0;
+}
+
+.weather-information p{
+    font-family: Lora;
+    font-size: 2vw;
+}
+
+.to-do-container{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+.to-do-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.to-do-grid img{
+    width:28vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.to-do-text-box{
+    font-family: Lora;
+    font-size: 2vw;
+    padding: 3px;
+    border-left: 1px solid rgb(143, 143, 143);
+    border-right: 1px solid rgb(143, 143, 143);
+    border-bottom: 1px solid rgb(143, 143, 143);
+}
+
+.to-do-grid a{
+    color: white;
+    font-family: Quicksand;
+    text-decoration: none;
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 40px;
+    background-color: #AA151B;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+}
+
+.to-do-grid a:hover{
+    background-color: #cd8d90;
+}
+
+.to-do-grid a:active{
+    background-color: #9bcd8d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.to-do-grid a:focus{
+    outline: 4px solid black;
+    outline-offset: 3px;
+}
+
+@media (max-width: 750px){
+    .title{
+        font-size: 8vw;
+    }
+    .title-break-line{
+        width: 20vw;
+    }
+
+    .barcelona-outline-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr 1fr;
+    }
+    .barcelona-outline-grid p{
+        font-size: 3vw;
+    }
+    #barcelona-outline-map{
+        width: 50vw;
+        height: auto;
+    }
+    #google-maps{
+        height: 60vw;
+        width: 100%;
+    }
+
+    .barcelona-weather-grid{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 0.5fr;
+        padding-bottom: 10vh;
+    }
+    .weather-information h2{
+        font-size: 4vw;
+    }
+    .weather-information p{
+        font-size: 3vw;
+    }
+
+    .to-do-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    }
+    .to-do-grid img{
+        width: 75vw;
+    }
+    .to-do-text-box{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .to-do-grid a{
+        grid-column: span 1;
+    }
+}

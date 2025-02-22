@@ -1,0 +1,240 @@
+/* Name: Ethan EG */
+/* Date: 2025-02-28 */
+/* File: general.css */
+
+/* html (for smooth scroll on skip content) */
+html{
+    scroll-behavior: smooth;
+}
+
+/* body */
+body{
+    background: white;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+body.loaded {
+    opacity: 1;
+}
+body.hidden{
+    opacity: 0;
+}
+
+
+/* Header */
+header {
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background: #AA151B;
+    width: 100%;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#nav-links{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+#nav-links a { 
+    color:white;
+    font-family: Quicksand;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* usually restricted by browser */
+#nav-links a:visited { 
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#nav-links a:hover { 
+    color: #F1BF00;
+    text-decoration: underline;
+}
+
+#nav-links a:active { 
+    color: #2b8701;
+    text-decoration: underline;
+}
+
+#nav-icon a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+#nav-icon a h1:hover{
+    color: #F1BF00;
+    text-decoration: underline;
+}
+
+#nav-icon a h1:active{
+    color: #2b8701;
+    text-decoration: underline;
+}
+
+#nav-icon h1{
+    color: white;
+    font-family: Quicksand;
+    font-size: 20px;
+}
+
+nav img{
+    width: 38px;
+    justify-content: left;
+    transition: width 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    header {
+        min-height: 80px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header img {
+        width: 30px;
+    }
+    #nav-links{
+        gap:20px;
+    }
+}
+
+@media (max-width: 710px) {
+    #nav-icon h1{
+        display:none;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav img{
+        width: 70px;
+        justify-content: left;
+        transition: width 0.3s ease;
+    }
+    #nav-icon h1{
+        display:inline;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    #nav-icon h1{
+        display:none;
+    }
+}
+
+/* Hiding "powered by google translate" */
+#google_translate_element { 
+    height: 26px !important; 
+    overflow: hidden !important; 
+}
+
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 45%;
+    background: #AA151B;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+    transition: transform 1.3s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 10px;
+    outline: solid rgb(208, 255, 0);
+}
+
+.skip-link:focus + nav {
+    margin-top: 40px;
+}
+
+.skip-link:hover{
+    background-color: #cd8d90;
+}
+
+.skip-link:active{
+    background-color: #9bcd8d;
+}
+
+/* Footer */
+footer{
+    padding: 0px 20px;
+    font-family: Quicksand;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    height: 120px;
+    background: #AA151B;
+    color: white;
+}
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.footer-right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-right hr{
+    align-self: center;
+    height: 1px;
+    color: #ffffff;
+    background: #ffffff;
+    width: 100%;
+    border: none;
+}
+
+.footer-flag {
+    justify-self: center;
+}
+
+@media(max-width: 610px) {
+    footer{
+        height:240px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .footer-right{
+        align-items: center;
+    }
+    .footer-left{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-right hr{
+        width: 80%;
+    }
+}

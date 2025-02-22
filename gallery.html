@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" href="styles/gallery.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan EG">
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <a href="#skip-start" class="skip-link">Skip to main content</a>
+        <nav>
+            <div id="nav-icon">
+                <a href="index.html">
+                    <img src="images/catalonia-icon.svg" alt="Catalonian coat of arms" width="30">
+                    <h1 id="header-title">Visit<br>Barcelona</h1>
+                </a>
+            </div>
+            <div id="nav-links">
+                <a href="gallery.html">Gallery</a>
+                <a href="things-to-do.html">Things To Do</a>
+                <a href="cultural-highlights.html">Cultural Highlights</a>
+                <div id="google_translate_element"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page-title">
+            <h1>What Does Barcelona Look Like?</h1>
+        </div>
+        <div class="gallery-container" id="skip-start">
+            <h2><b>Beauty</b> To Be Found Everywhere.</h2>
+            <div class="image-grid">
+                <img
+                srcset="images/gallery/night-barcelona-large.jpg 2200w, 
+                        images/gallery/night-barcelona-1000.jpg 1000w, 
+                        images/gallery/night-barcelona-600.jpg 600w"
+                sizes="100vw"
+                src="images/gallery/night-barcelona-1000.jpg"
+                alt="A drone shot of Barcelona, Spain at night"
+                class="horizontal-1">
+                <img
+                srcset="images/gallery/symmetry-large.jpg 1200w, 
+                        images/gallery/symmetry-600.jpg 600w"
+                sizes="100vw"
+                src="images/gallery/night-barcelona-1000.jpg"
+                alt="A barcelona street shot framed by an arch"
+                class="vertical-1">
+                <img src="images/gallery/nature.jpg" alt="large building on hills in Barcelona" class="horizontal-2">
+                <img src="images/gallery/figure.jpg" alt="a large figure out front of a museum" class="vertical-2">
+                <img src="images/gallery/bacelona-icon.jpg" alt="Barcelona icon" class="middle">
+            </div>
+            <h2>So <b>Clean</b>... So <b>Colourful</b>...</h2>
+            <div class="image-grid">
+                <img src="images/gallery/basilica.jpeg" alt="Barcelona Basilica" class="horizontal-1">
+                <img src="images/gallery/roofs.jpg" alt="funky roofs in Barcelona" class="vertical-1">
+                <img src="images/gallery/football.webp" alt="Barcelona FC team photo" class="horizontal-2">
+                <img src="images/gallery/beach.jpg" alt="sunny drone shot of Barcelona beach" class="vertical-2">
+                <img src="images/gallery/barcelona-fc-icon.png" alt="Barcelona FC icon" class="middle" id="barcelona-fc-icon"> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="images/catalonia-icon.svg" alt="Catalonian coat of arms" width="30">
+            </a>
+            <h3>Website created by Ethan EG for IMD1005</h3>
+        </div>
+        <div class="footer-flag">
+            <img src="images/barcelona-flag.png" alt="barcelona flag" width="100">
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2025 Visit Barcelona. All Rights Reserved.</p>
+            <hr>
+            <p>Contact Us: <b>info@visitbarcelona.com</b></p>
+        </div>
+    </footer>
+    <script src="scripts/page-transitions.js"></script>
+    <script src="scripts/language-change.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

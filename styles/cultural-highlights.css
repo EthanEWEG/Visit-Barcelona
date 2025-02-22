@@ -1,0 +1,72 @@
+/* Name: Ethan EG */
+/* Date: 2025-02-28 */
+/* File: cultural-highlights.css */
+
+.page-title{
+    background-color: rgb(241, 242, 243);
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px;
+    margin-bottom: 50px;
+}
+
+.page-title h1{
+    font-family: Quicksand;
+    font-size: 4.5vw;
+    font-weight: lighter;
+}
+
+.culture-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-bottom: 80px;
+}
+
+.culture-grid img{
+    width: 50vw;
+    border-radius: 2px;
+}
+
+.culture-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px 12vw;
+    gap: 50px;
+    place-items: center;
+}
+
+.culture-row:nth-of-type(2){
+    background-color: rgb(241, 242, 243);
+}
+
+.text-box h2{
+    font-family: Quicksand;
+    font-size: 3.5vw;
+    font-weight: lighter;
+}
+
+.text-box p{
+    font-family: Lora;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 750px){
+    .culture-row{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .culture-row:nth-of-type(2) img{
+        grid-row: 1 / 2;
+    }
+    .culture-row:nth-of-type(2) p{
+        grid-row: 2 / 3;
+    }
+    .text-box h2{
+        font-size: 4.5vw;
+    }
+    .text-box p{
+        font-size: 3vw;
+    }
+}
